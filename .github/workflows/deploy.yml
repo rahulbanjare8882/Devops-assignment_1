@@ -31,6 +31,7 @@ jobs:
       - name: Login to DockerHub
         uses: docker/login-action@v3
         with:
+        #new updated username and password
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 # deployment
